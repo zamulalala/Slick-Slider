@@ -1,0 +1,182 @@
+@font-face {
+      font-family: Aeroport-Medium;
+      src: url(./Aeroport-Medium.ttf);
+}
+
+html, body {
+      margin: 0%;
+      padding: 0%;
+      width: 100%;
+      height: 480px;
+      overflow: hidden;
+}
+
+body {
+      min-width: 300px;
+      max-width: 850px;
+      position: relative;
+}
+
+.image-slider {
+      z-index: 0;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      background: #242233;
+}
+
+.image-slide {
+      height: 480px;
+      margin: 0 auto;
+}
+
+.slick-slide.slick-center {
+      transform: scale(1.2);
+      transition: transform .8s 1.4s cubic-bezier(.84, 0, .08, .99);
+}
+
+.slick-slide {
+      transition: transform .7s cubic-bezier(.84, 0, .08, .99);
+}
+
+.logo {
+      position: absolute;
+      z-index: 3;
+      width: 200px;
+      top: 5%;
+      left: 9%;
+}
+
+.slider-control {
+      margin: 0%;
+      position: absolute;
+      z-index: 4;
+      bottom: 5%;
+      left: 9%;
+      display: flex;
+}
+
+button {
+      color: #fff;
+      background: none;
+      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, .3);
+      font-size: 16px;
+      border-radius: 50%;
+      margin: .4em;
+      display: inline-block;
+      cursor: pointer;
+}
+
+button:hover {
+      /* color: rgb(50, 50, 50); */
+      background-color: rgb(255, 255, 255, .5);
+      transition: all 0.5s;
+}
+
+.block-1 {
+      z-index: 2;
+      position: absolute;
+      height: 480px;
+      width: 8%;
+      left: 0%;
+      background: #242233;
+}
+
+.block-2 {
+      z-index: 2;
+      position: absolute;
+      height: 480px;
+      width: 20%;
+      left: 27%;
+      background: #242233;
+}
+
+.block-3 {
+      z-index: 2;
+      position: absolute;
+      height: 480px;
+      width: 6%;
+      right: 0%;
+      background: #242233;
+}
+
+.overlay {
+      z-index: 1;
+      position: absolute;
+      height: 480px;
+      width: 40%;
+      left: 5%;
+      background: rgba(0, 0, 0, .65);
+}
+
+.text-slider-wrapper {
+      z-index: 3;
+      position: absolute;
+      width: 100%;
+      top: calc(480px - 200px);
+}
+
+.text-slider {
+      margin: 0%;
+      padding: 0%;
+      height: 100vh;
+}
+
+.text-slide h1 {
+      color: #fff;
+      font-size: 25px;
+      /* font-family: "Cinzel"; */
+      font-family: Aeroport-Medium;
+      font-weight: lighter;
+      text-transform: uppercase;
+      padding-left: 10%;
+}
+
+@media(max-width: 600px) {
+      .block-1 {
+            width: 10%;
+      }
+}
+
+@media(max-width: 500px) {
+      .logo {
+            width: 150px;
+      }
+
+      .block-2, .overlay {
+            display: none;
+      }
+
+      .block-1 {
+            width: 50%;
+      }
+
+      .block-3 {
+            width: 20%;
+      }
+
+      .slide-slick {
+            display: none !important;
+      }
+
+      .text-slide h1 {
+            font-size: 16px !important;
+      }
+
+      .text-slider-wrapper {
+            position: absolute;
+            top: 67% !important;
+      }
+
+      .slider-control {
+            bottom: 2%;
+            left: 6.5%;
+      }
+      
+      button {
+            padding: 15px;
+      }
+}
+
