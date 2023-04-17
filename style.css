@@ -134,6 +134,7 @@ button:hover {
       padding-left: 10%;
 }
 
+
 @media(max-width: 600px) {
       .block-1 {
             width: 10%;
@@ -154,7 +155,7 @@ button:hover {
       }
 
       .block-3 {
-            width: 20%;
+            width: 15%;
       }
 
       .slide-slick {
@@ -178,4 +179,6 @@ button:hover {
       button {
             padding: 15px;
       }
+      
 }
+
