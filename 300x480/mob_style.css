@@ -7,13 +7,13 @@ html, body {
       margin: 0%;
       padding: 0%;
       width: 100%;
-      height: 480px;
+      height: 600px;
       overflow: hidden;
 }
 
 body {
-      min-width: 300px;
-      max-width: 850px;
+      width: 300px;
+      /* max-width: 850px; */
       position: relative;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 .image-slide {
-      height: 480px;
+      height: 200px;
       margin: 0 auto;
 }
 
@@ -43,25 +43,44 @@ body {
 .logo {
       position: absolute;
       z-index: 3;
-      width: 200px;
-      top: 5%;
-      left: 9%;
+      width: 150px;
+      top: 1%;
+      left: 24%;
+}
+.cta {
+      position: absolute;
+      z-index: 6;
+      top: 75%;
+      left: 50%;
+      margin-left: -65px;
+      color: #fff;
+      font-family: Aeroport-Medium;
+      border: 1px solid;
+      padding: 10px 20px;
+      width: 88px;
+      cursor: pointer;
+}
+
+.cta:hover {
+      /* color: rgb(50, 50, 50); */
+      background-color: rgb(255, 255, 255, .5);
+      transition: all 0.5s;
 }
 
 .slider-control {
       margin: 0%;
       position: absolute;
       z-index: 4;
-      bottom: 5%;
-      left: 9%;
+      bottom: 1%;
+      left: 29%;
       display: flex;
 }
 
 button {
       color: #fff;
       background: none;
-      padding: 20px;
-      border: 1px solid rgba(255, 255, 255, .3);
+      padding: 15px;
+      border: 1px solid;
       font-size: 16px;
       border-radius: 50%;
       margin: .4em;
@@ -78,44 +97,48 @@ button:hover {
 .block-1 {
       z-index: 2;
       position: absolute;
-      height: 480px;
-      width: 8%;
-      left: 0%;
+      height: 40px;
+      width: 600px;
+      top: 48%;
       background: #242233;
+      /* display: none; */
 }
 
 .block-2 {
       z-index: 2;
       position: absolute;
-      height: 480px;
-      width: 20%;
-      left: 27%;
+      height: 70px;
+      width: 600px;
+      right: 0%;
       background: #242233;
+      /* display: none; */
 }
 
 .block-3 {
       z-index: 2;
       position: absolute;
-      height: 480px;
-      width: 6%;
-      right: 0%;
+      height: 80px;
+      width: 600px;
+      bottom: 0%;
       background: #242233;
+      /* display: none; */
 }
 
 .overlay {
       z-index: 1;
       position: absolute;
-      height: 480px;
-      width: 40%;
-      left: 5%;
-      background: rgba(0, 0, 0, .65);
+      height: 200px;
+      width: 300px;
+      top: 54.65%;
+      left: 0%;
+      background: rgba(0, 0, 0, .8);
 }
 
 .text-slider-wrapper {
       z-index: 3;
       position: absolute;
       width: 100%;
-      top: calc(480px - 200px);
+      top: 58%;
 }
 
 .text-slider {
@@ -126,16 +149,20 @@ button:hover {
 
 .text-slide h1 {
       color: #fff;
-      font-size: 25px;
+      font-size: 15px;
       /* font-family: "Cinzel"; */
       font-family: Aeroport-Medium;
       font-weight: lighter;
       text-transform: uppercase;
       padding-left: 10%;
 }
+.slick-slide {
+      height: 230px !important;
+      margin: 0 !important;
+}
 
 
-@media(max-width: 600px) {
+/* @media(max-width: 600px) {
       .block-1 {
             width: 10%;
       }
@@ -180,5 +207,5 @@ button:hover {
             padding: 15px;
       }
       
-}
+} */
 

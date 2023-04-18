@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Slick Slider</title>
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="mob_style.css">
 
       <!-- Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
@@ -19,7 +19,8 @@
 </head>
 <body>
 
-      <img src="./logo.png" alt="" class="logo">
+      <img src="../img/logo.png" alt="" class="logo">
+      <div class="cta">Подробнее</div>
 
       <div class="text-slider-wrapper">
             <div class="text-slider">
@@ -45,15 +46,15 @@
       <div class="overlay"></div>
 
       <div class="image-slider">
-            <div class="image-slide" id="one" style="background: url(slider-img-4.jpg) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="two" style="background: url(slider-img-2.jpg) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="three" style="background: url(slider-img-3.jpg) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="four" style="background: url(slider-img-1.jpg) no-repeat 50% 50%; background-size: cover;"></div>
-            <div class="image-slide" id="five" style="background: url(slider-img-5.jpg) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="one" style="background: url(../img/slider-img-4.jpg) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="two" style="background: url(../img/slider-img-2.jpg) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="three" style="background: url(../img/slider-img-3.jpg) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="four" style="background: url(../img/slider-img-1.jpg) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="five" style="background: url(../img/slider-img-5.jpg) no-repeat 50% 50%; background-size: cover;"></div>
       </div>
       
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
-<script src="slick.js"></script>
+<script src="../slick.js"></script>
 <script>
 
 var sickPrimary = {
@@ -67,6 +68,11 @@ var sickPrimary = {
       centerMode: true,
       prevArrow: $('.prev'),
       nextArrow: $('.next'),
+      verticalSwiping: true,
+      vertical: true,
+    //   adaptiveHeight: true,
+      centerMode: true,
+      centerPadding: '95px',
       // variableWidth: true
 }
 
